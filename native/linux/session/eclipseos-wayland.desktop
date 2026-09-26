@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=EclipseOS
+Comment=EclipseOS — our own Wayland compositor and desktop shell
+Exec=eclipseos-session
+Type=Application
+DesktopNames=EclipseOS
+Keywords=wayland;eclipseos;

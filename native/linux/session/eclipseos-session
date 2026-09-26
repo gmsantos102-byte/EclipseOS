@@ -1,0 +1,14 @@
+#!/bin/sh
+# EclipseOS — Wayland session entry point (launched by SDDM after login).
+# ECLIPSEOS_SAFE=1 starts the compositor with configuration reset (recovery).
+set -e
+
+if [ -n "$ECLIPSEOS_SAFE" ]; then
+    rm -f "${XDG_CONFIG_HOME:-$HOME/.config}/eclipseos/compositor.json"
+fi
+
+# Small logs to diagnose startup failures (never log secrets/PII).
+LOGDIR="${XDG_STATE_HOME:-$HOME/.local/state}/eclipseos"
+mkdir -p "$LOGDIR"
+
+exec /usr/local/bin/eclipse-compositor 2>>"$LOGDIR/compositor.log" 1>&2

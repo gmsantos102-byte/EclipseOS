@@ -1,0 +1,33 @@
+{
+  "exportedAt": "2026-09-26T15:20:09.799Z",
+  "exportDurationMs": 61011,
+  "fileCount": 156,
+  "assetCount": 3,
+  "resolvedAssetCount": 0,
+  "missingAssets": [
+    {
+      "url": "https://media.db.com/images/public/6aada4652d1f7dcfe14104ba/9aefa77b2_Eclipseos-logo.png",
+      "error": "Failed to fetch"
+    },
+    {
+      "url": "https://media.db.com/images/public/6aada4652d1f7dcfe14104ba/4e30de8ea_generated_image.png",
+      "error": "Failed to fetch"
+    },
+    {
+      "url": "https://media.db.com/images/public/6aada4652d1f7dcfe14104ba/33586aab9_generated_image.png",
+      "error": "Failed to fetch"
+    }
+  ],
+  "warnings": [
+    "Preview iframe scan failed: Failed to read a named property 'document' from 'Window': Blocked a frame with origin \"https://app.base44.com\" from accessing a cross-origin frame."
+  ],
+  "diagnostics": {
+    "exportState": "BUILDING_FILE_TREE",
+    "assetCount": 3,
+    "pendingFetches": 0,
+    "pendingImages": 0,
+    "domNodeCount": 19461,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "exportDurationMs": 61012
+  }
+}

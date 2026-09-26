@@ -1,0 +1,23 @@
+[package]
+name = "eclipse-compositor"
+version = "0.1.0"
+edition = "2021"
+description = "EclipseOS — our own Wayland compositor (the real window manager layer)"
+license = "MIT"
+
+[dependencies]
+# Pinned to the Smithay master branch: expect minor API drift on first build;
+# reconcile against https://github.com/smithay/smithay/tree/master/template
+[dependencies.smithay]
+git = "https://github.com/smithay/smithay"
+default-features = false
+features = [
+    "backend_winit",
+    "desktop",
+    "renderer_glow",
+    "wayland-drm",
+    "slog-stdlog",
+]
+
+[profile.release]
+lto = true
